@@ -1,0 +1,43 @@
+name: notes_app
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.5 <4.0.0"
+
+isar_version: &isar_version 3.0.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  google_fonts: ^5.1.0
+  lottie: ^2.5.0
+  isar: *isar_version
+  isar_flutter_libs: *isar_version
+  auto_animated: ^3.2.0
+  auto_animated_list: ^1.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+  build_runner:
+  isar_generator: *isar_version
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/animations/
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
